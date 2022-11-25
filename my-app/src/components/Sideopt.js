@@ -53,8 +53,9 @@ function Sideopt(props) {
               })
             }
           </SubMenu>
-          <MenuItem>Invites</MenuItem>
+          <MenuItem routerLink={<Link to={"/invites/"+props.user} />}>Invites</MenuItem>
           <MenuItem>Requests</MenuItem>
+          <MenuItem routerLink={<Link to={"/tasks/"+props.user} />}>Tasks</MenuItem>
           <MenuItem> Help </MenuItem>
         </Menu>
       </Sidebar>

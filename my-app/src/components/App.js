@@ -9,6 +9,8 @@ import Callback from "./Callback";
 import Profile from "./Profile";
 import TeamPage from "./TeamPage";
 import Project from "./Project";
+import Invites from "./Invites";
+import Task from "./Task";
 
 export default function App() {
   return (
@@ -30,6 +32,16 @@ export default function App() {
           <Route path="/project/:name" exact>
             <ProSidebarProvider>
             <Project />
+            </ProSidebarProvider>
+          </Route>
+          <Route path="/invites/:user" exact>
+            <ProSidebarProvider>
+            <Invites />
+            </ProSidebarProvider>
+          </Route>
+          <Route path="/tasks/:user" exact>
+            <ProSidebarProvider>
+            <Task />
             </ProSidebarProvider>
           </Route>
           <Route path="*">
